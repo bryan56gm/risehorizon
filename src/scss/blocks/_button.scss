@@ -1,0 +1,32 @@
+.button{
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    width: max-content;
+    padding: 1.1rem 1.5rem;
+    border-radius: 10px;
+    border: .8px solid rgba(255, 255, 255, 0.137);
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    background: radial-gradient( 100% 100% at 100% 0%, rgba(211, 216, 218, 0.369) 0%, #4b505388 100% );
+    box-shadow: 0px 4px 8px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(136, 112, 189, 0.3), inset 0px -3px 0px rgb(131, 140, 211);
+    
+    transition: box-shadow 0.45s ease,transform 0.45s ease;
+    @include hover{
+        &:hover {
+            box-shadow: 0px 4px 8px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px rgb(60, 79, 224);
+            transform: translateY(-2px);
+        }
+    }
+
+    &:active{
+        box-shadow: inset 0px 3px 7px #3c4fe0;
+        transform: translateY(2px);
+    }
+
+    &__arrow{
+        height: .5rem;
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+}

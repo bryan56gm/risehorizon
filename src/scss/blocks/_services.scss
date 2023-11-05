@@ -1,0 +1,52 @@
+.services{
+    &__section{
+        background-color: var(--body-color);
+        display: grid;
+        overflow: hidden;
+        @include tablet{
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+        &:nth-child(even){ 
+            background-color: var(--first-color);
+            color: var(--second-text-color);
+            @include tablet{ & img{ order: -1}} 
+        }
+    }
+
+    &__title{
+        font-size: var(--h1-font-size);
+    }
+    
+    &__subtitle{
+        margin: 0;
+        color: #149dcc;
+        font-size: .8rem;
+        font-size: var(--small-font-size);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__content{
+        padding: 6rem 2rem;
+        max-width: 500px;
+        @include mobile-mx{
+            padding-left: 10%;
+        }
+    }
+
+    &__img{
+        display: block;
+        object-fit: cover;
+        min-height: 300px;
+        height: 100%;
+        max-height: 400px;
+        width: 100%;
+        transition: all 2s;
+        @include hover{
+            &:hover{ scale: 1.025}
+        }
+        @include tablet { max-height: 450px}
+    }
+}

@@ -1,0 +1,67 @@
+include ../config/menu
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        meta(name="description", content="Risehorizon")
+        block title
+
+        meta(name="author" content="Bryan56gm")
+        meta(name="copyright" content="Copyright bryan56gm")
+
+        //- <!--=============== FAVICON ===============-->
+        link(rel="shortcut icon" href="https://bryan56gm.github.io/risehorizon/assets/favicon.png" type="image/x-icon")
+        //- <!--=============== CSS ===============-->
+        link(rel="stylesheet", href="css/styles.css")
+
+    body
+        //- <!--========== HEADER ==========-->
+        header#header.header
+            nav.container.nav 
+                a(href="https://bryan56gm.github.io/risehorizon/").nav__logo
+                    img(src="assets/icons/logo.svg", alt="Logo").nav__img
+                    | Risehorizon
+
+                #toggle.toggle
+                    .toggle__icon
+
+                ul#menu.menu
+                    block menu
+
+        //- <!--========== MAIN ==========-->
+        main#main.main
+            block contentWeb
+
+        //- <!--========== FOOTER ==========-->
+        footer.footer
+            .container
+                .footer__content
+                    a(href="https://bryan56gm.github.io/risehorizon/").footer__logo.footer__item 
+                        img(src="assets/icons/logo.svg", alt="Logo").footer__img
+                        |Risehorizon
+
+                    .footer__direction.footer__item 
+                        h2.footer__title Direction
+                        p.footer__text 333 Forest Avenue
+                            br
+                            | 08000 - Barcelona
+                        p.footer__text Tel: +34 699 999 999
+                        p.footer__text Email: info@risehorizon.com
+
+                    .footer__links.footer__item
+                        h2.footer__title Links
+                        a(href="https://bryan56gm.github.io/risehorizon/gallery.html").footer__text Projects
+                        a(href="https://bryan56gm.github.io/risehorizon/contact.html").footer__text Contact
+
+                .footer__lower
+                    .footer__media
+                        a(href="#").footer__social: img(src="assets/icons/instagram.svg", alt="Icono instagram").footer__icon.footer__icon-instagram
+                        a(href="#").footer__social: img(src="assets/icons/facebook.svg", alt="Icono facebook").footer__icon
+                    p.footer__copy &copy; 2023 Bryan56gm. Todos los derechos reservados
+
+        //- <!--=============== MAIN JS ===============-->
+        script(src="./js/scripts-min.js")                 
+

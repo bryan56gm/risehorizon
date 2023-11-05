@@ -1,0 +1,19 @@
+extends ../templates/template
+
+block title
+  title Contact
+
+block menu
+  -pageActive = 'Contact'
+  include ../includes/menu
+
+block contentWeb
+  <!--==================== BANNER - CONTACT ====================-->
+  section.banner
+    img(src="assets/img/contact/banner-contact.jpg", alt="").banner__img
+
+    .container.banner__container
+      h2.banner__title Connect with us: We are at your disposal!.
+      p.banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique pariatur, hic magni.
+      a(href="#").button Llámanos +34 612 345 678
+      a(href="#").button info@ejemplo.com

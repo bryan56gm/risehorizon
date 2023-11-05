@@ -1,0 +1,59 @@
+extends ../templates/template
+
+block title
+  title Services
+
+block menu
+  -pageActive = 'Services'
+  include ../includes/menu
+
+block contentWeb
+  <!--==================== BANNER - SERVICES ====================-->
+  section.banner
+    img(src="assets/img/servicees/banner-services.jpg", alt="Banner servicios").banner__img
+
+    .container.banner__container
+      h2.banner__title Exploring Horizons: Our Construction Services.
+      p.banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique pariatur, hic magni.
+      a(href="#").button Servicios
+        img(src="assets/icons/arrow-down.svg", alt="").button__arrow
+        
+  
+  <!--==================== SERVICES ====================-->
+  section#services.services
+    .services__container
+      section.services__section 
+        .services__content 
+          p.services__subtitle Lorem ipsum dolor sit amet
+          h2.services__title Lorem ipsum dolor sit
+          p.services__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, illum error deserunt adipisci inventore architecto repudiandae praesentium.
+        img(src="assets/img/servicees/services-1.jpg", alt="").services__img
+        
+      section.services__section 
+        .services__content 
+          p.services__subtitle Lorem ipsum dolor sit amet
+          h2.services__title Lorem ipsum dolor sit
+          p.services__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, illum error deserunt adipisci inventore architecto repudiandae praesentium.
+        img(src="assets/img/servicees/services-2.jpg", alt="").services__img
+
+      section.services__section 
+        .services__content 
+          p.services__subtitle Lorem ipsum dolor sit amet
+          h2.services__title Lorem ipsum dolor sit
+          p.services__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, illum error deserunt adipisci inventore architecto repudiandae praesentium.
+        img(src="assets/img/servicees/services-3.jpg", alt="").services__img
+
+      section.services__section 
+        .services__content 
+          p.services__subtitle Lorem ipsum dolor sit amet
+          h2.services__title Lorem ipsum dolor sit
+          p.services__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, illum error deserunt adipisci inventore architecto repudiandae praesentium.
+        img(src="assets/img/servicees/services-4.jpg", alt="").services__img
+
+      section.services__section 
+        .services__content 
+          p.services__subtitle Lorem ipsum dolor sit amet
+          h2.services__title Lorem ipsum dolor sit
+          p.services__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, illum error deserunt adipisci inventore architecto repudiandae praesentium.
+        img(src="assets/img/servicees/services-5.jpg", alt="").services__img
+      

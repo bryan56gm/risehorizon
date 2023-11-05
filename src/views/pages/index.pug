@@ -1,0 +1,47 @@
+extends ../templates/template
+
+block title
+  title Risehorizon - Home
+
+block menu
+  -pageActive = 'Home'
+  include ../includes/menu
+
+block contentWeb
+  <!--==================== BANNER ====================-->
+  .banner.home
+    .swiper.home__swiper
+      .swiper-wrapper
+        section.swiper-slide
+          img(src="assets/img/home/banner-1.jpg", alt="Banner 1").banner__img  
+          .container.banner__container
+            h2.banner__title Lorem ipsum dolor sit amet 1.
+            p.banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore error ab asperiores harum architecto voluptatem libero.
+
+        section.swiper-slide
+          img(src="assets/img/home/banner-2.jpg", alt="Banner 2").banner__img  
+          .container.banner__container
+            h2.banner__title Lorem ipsum dolor sit amet 2.
+            p.banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore error ab asperiores harum architecto voluptatem libero.
+
+        section.swiper-slide
+          img(src="assets/img/home/banner-3.jpg", alt="Banner 3").banner__img  
+          .container.banner__container
+            h2.banner__title Lorem ipsum dolor sit amet 3.
+            p.banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore error ab asperiores harum architecto voluptatem libero.
+
+        section.swiper-slide
+          img(src="assets/img/home/banner-4.jpg", alt="Banner 4").banner__img  
+          .container.banner__container
+            h2.banner__title Lorem ipsum dolor sit amet 4.
+            p.banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore error ab asperiores harum architecto voluptatem libero.
+
+        section.swiper-slide
+          img(src="assets/img/home/banner-5.jpg", alt="Banner 5").banner__img  
+          .container.banner__container
+            h2.banner__title Lorem ipsum dolor sit amet 5.
+            p.banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore error ab asperiores harum architecto voluptatem libero.
+        
+    .swiper-button-next.home__arrow-next
+    .swiper-button-prev.home__arrow-prev
+    .swiper-pagination.home__pagination

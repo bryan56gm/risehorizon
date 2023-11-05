@@ -1,0 +1,85 @@
+extends ../templates/template
+
+block title
+  title Gallery
+
+block menu
+  -pageActive = 'Gallery'
+  include ../includes/menu
+
+block contentWeb
+  <!--==================== BANNER - GALLERY ====================-->
+  section.banner.banner--gallery
+    img(src="assets/img/gallery/banner-gallery.jpg", alt="").banner__img
+
+    .container.banner__container
+      h2.banner__title Our projects 
+
+  <!--==================== GALLERY ====================-->
+  section.section.gallery
+    .container
+      .gallery__grid
+        .gallery__item
+          img(src="assets/img/gallery/gallery-1.jpg", alt="", data-index="1").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-2.jpg", alt="", data-index="2").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-3.jpg", alt="", data-index="3").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-4.jpg", alt="", data-index="4").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-5.jpg", alt="", data-index="5").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-6.jpg", alt="", data-index="6").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+            
+        .gallery__item
+          img(src="assets/img/gallery/gallery-7.jpg", alt="", data-index="7").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-8.jpg", alt="", data-index="8").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-9.jpg", alt="", data-index="9").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-10.jpg", alt="", data-index="10").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-11.jpg", alt="", data-index="11").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+        .gallery__item
+          img(src="assets/img/gallery/gallery-12.jpg", alt="", data-index="12").gallery__img
+          .gallery__data 
+            h3.gallery__subtitle CASA LOREM
+            p.gallery__text Lorem ipsum dolor sit amet.
+
+  <!--==================== FULLSCREEN ====================-->
+  include ../includes/fullscreen

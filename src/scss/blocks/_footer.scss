@@ -1,0 +1,68 @@
+.footer{
+    @media screen and (max-height: 645px) { position: static}
+    position: sticky;
+    z-index: var(--z-low);
+    bottom: 0;
+    width: 100%;
+    color: var(--second-text-color);
+    background-color: var(--first-color);
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 4rem 3rem;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 2.5rem;
+        margin-bottom: 2rem;
+        @include tablet{ flex-direction: row}
+    }
+
+    &__logo{
+        font-family: var(--title-font);
+        width: 80%;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+        align-self: center;
+    }
+
+    &__img{ width: 90%}
+
+    &__item{ width: 170px}
+
+    &__text{
+        display: block;
+        margin-block: 12.8px;
+        color: var(--second-text-color);
+    }
+
+    &__lower{
+        border-top: 1px solid grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile-mx{ flex-direction: column}
+    }
+
+    &__media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .7rem;
+        padding-block: 1rem;
+        @include tablet{ order: 1}
+        
+    }
+
+    &__icon{
+        width: 20px;
+        &-instagram{ width: 26px}
+    }
+
+    &__copy{ margin-block: 0;
+    color: var(--copy-color);}
+}

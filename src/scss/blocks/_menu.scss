@@ -1,0 +1,37 @@
+.menu{
+    display: flex;
+    row-gap: .5rem;
+    @include mobile-mx{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-block: 2rem;
+        display: none;
+    }
+    @include tablet{ column-gap: 1.2rem}
+    @include laptop{ column-gap: 2.3rem}
+
+    &.show{ display: flex}
+
+    &__link{
+        display: block;
+        padding-block: 12px;
+        font-weight: lighter;
+        transition: .4s;
+        color: var(--nav-link-color);
+        @include hover{
+            &:hover{ color: var(--nav-link-color-alt)}
+        }
+
+        &.active{
+            &::after{
+                display: block;
+                content: "";
+                height: 2px;
+                width: 2rem;
+                background-color: rgb(226, 221, 213);
+                margin-inline: auto;
+            }
+        }
+    } 
+}

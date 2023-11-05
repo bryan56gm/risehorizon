@@ -1,0 +1,44 @@
+.toggle{
+        width: var(--toggle-size);
+        height: var(--toggle-size);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        @include tablet { display: none}
+
+    &__icon{ position: relative}
+    
+    &__icon,
+    &__icon::before,
+    &__icon::after{
+        display: block;
+        background-color: var(--toggle-color);
+        width: 100%;
+        height: var(--toggle-thick);
+        border-radius: 10px;
+        transition: transform .2s;
+    }
+    
+    &__icon::before,
+    &__icon::after{
+        content: "";
+        position: absolute;
+    }
+    
+    &__icon::before{top: var(--toggle-space)}
+    &__icon::after{bottom: var(--toggle-space)}
+
+    &--cross &__icon::before{
+        transform: rotate(-45deg);
+        top: 0;    
+    }
+
+    &--cross &__icon::after{
+        transform: rotate(45deg);    
+        bottom: 0;
+    }
+
+    &--cross  &__icon{ background-color: transparent}
+}
+

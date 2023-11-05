@@ -1,0 +1,14 @@
+each page, index in pages
+    if page == pageActive
+        li.menu__item
+            if index==0
+                a(href='https://bryan56gm.github.io/risehorizon/').menu__link.active= page
+            else
+                a(href=`https://bryan56gm.github.io/risehorizon/${page.toLowerCase()}.html`).menu__link.active= page
+
+    else
+        li.menu__item
+            if index==0
+                a(href='https://bryan56gm.github.io/risehorizon/').menu__link= page
+            else
+                a(href=`https://bryan56gm.github.io/risehorizon/${page.toLowerCase()}.html`).menu__link= page
